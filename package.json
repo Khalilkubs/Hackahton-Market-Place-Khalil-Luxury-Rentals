@@ -1,0 +1,46 @@
+{
+  "name": "khalilluxuryrentals",
+  "version": "0.1.0",
+  "private": true,
+  "description": "I have completed the hackathon within 24 hours. There were 5 pages including the home page and all pages are responsive. In home page, when you click on view all/view all products you will be redirected to categories page. Inside cateogories page first 8 products are visible and the remaining 4 products are only visible when you click on the button of show more. In home page, the Nissan Gt car which is the second product where when you click on  rent now button you will be redirected to payment page and on scroll last you will see another rent now butoon to which when you click on it you will be rediected to admin page. In categories, page on the nissan car product, when you click on it you will be redirected to product details page. So thats the whole website for better understanding here is the linked in post: \"https://www.linkedin.com/posts/jamila-yaqoob-dhedhi_giaic-genai-governorsindhit-activity-7271496590459092992-afF2?utm_source=share&utm_medium=member_desktop\"",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@radix-ui/react-slider": "^1.2.2",
+    "@sanity/client": "^6.24.4",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.74.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.468.0",
+    "next": "^14.2.23",
+    "next-sanity": "^9.8.54",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-is": "^19.0.0",
+    "sanity": "^3.74.1",
+    "styled-components": "^6.1.15",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/uuid": "^10.0.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "keywords": []
+}
