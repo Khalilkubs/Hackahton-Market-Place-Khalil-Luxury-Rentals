@@ -2,7 +2,7 @@ Khalil Luxury Rentals – Car Rental Marketplace
 
 Car Rental Website built using Next.js 14+ and Sanity CMS, providing a seamless platform for users to browse, rent, and manage cars efficiently. The website features a user-friendly interface, allowing customers to explore detailed car listings, check availability, and make bookings. Users can also view their order history and track the status of their rentals.  
  Hackathon Completion  
-I have successfully completed the hackathon within 24 hours. The website consists of 5 pages, including a responsive home page.  
+I have successfully completed the hackathon. The website consists of 5 pages, including a responsive home page.  
 
 - Home Page: Clicking on "View All" redirects to the Categories page.  
 - Categories Page: Displays 8 products initially, with an option to show 4 more on button click.  
