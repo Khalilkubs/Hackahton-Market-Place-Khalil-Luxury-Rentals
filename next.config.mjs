@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
       domains: ["cdn.sanity.io"],
@@ -6,7 +5,8 @@ const nextConfig = {
     typescript: {
       ignoreBuildErrors: true, // 🚨 Use with caution
     },
+    trailingSlash: true,  // ✅ Ensures correct routing on Vercel
   };
   
-  export default nextConfig; // ✅ Correct way for ES Modules
+  export default nextConfig;
   
