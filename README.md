@@ -1,10 +1,38 @@
-I have completed the hackathon within 24 hours. There were 5 pages including the home page and all pages are responsive. In home page, when you click on view all/view all products you will be redirected to categories page. Inside cateogories page first 8 products are visible and the remaining 4 products are only visible when you click on the button of show more. In home page, the Nissan Gt car which is the second product where when you click on  rent now button you will be redirected to payment page and on scroll last you will see another rent now butoon to which when you click on it you will be rediected to admin page. In categories, page on the nissan car product, when you click on it you will be redirected to product details page. So thats the whole website for better understanding here is the linked in post: "https://www.linkedin.com/posts/jamila-yaqoob-dhedhi_giaic-genai-governorsindhit-activity-7271496590459092992-afF2?utm_source=share&utm_medium=member_desktop" 
+Khalil Luxury Rentals – Car Rental Marketplace 
 
-Car Rental Website built using Next.js 14+ and Sanity CMS. It provides a seamless platform for users to browse, rent, and manage cars efficiently. The website features a user-friendly interface, allowing customers to explore detailed car listings, check availability, and make bookings. Users can also view their order history and track the status of their rentals.
+Car Rental Website built using Next.js 14+ and Sanity CMS, providing a seamless platform for users to browse, rent, and manage cars efficiently. The website features a user-friendly interface, allowing customers to explore detailed car listings, check availability, and make bookings. Users can also view their order history and track the status of their rentals.  
+ Hackathon Completion  
+I have successfully completed the hackathon within 24 hours. The website consists of 5 pages, including a responsive home page.  
 
-The backend is powered by Sanity CMS, enabling robust CRUD operations for managing car details, rental data, and user interactions. The system ensures real-time updates, maintaining accurate stock levels and order records. With a professional design and functionality focus, the project aims to deliver a reliable, user-centric car rental experience.
+- Home Page: Clicking on "View All" redirects to the Categories page.  
+- Categories Page: Displays 8 products initially, with an option to show 4 more on button click.  
+- Product Interactions:  
+  - Nissan GT Car (Second product on Home Page) → Clicking "Rent Now" redirects to the Payment Page.  
+  - Scrolling to the bottom of the Home Page, another "Rent Now" button redirects to the Admin Page.  
+  - Clicking the Nissan car in Categories redirects to the Product Details Page.  
 
-The platform also emphasizes scalability and future enhancements, such as adding dynamic filtering, advanced shipment tracking, and comprehensive analytics to meet the evolving needs of the car rental industry.
-here is the linked in post: https://www.linkedin.com/posts/jamila-yaqoob-dhedhi_reactjs-javascriptlovers-uxdesign-activity-7287841107277701122-T-B3?utm_source=share&utm_medium=member_desktop
+Car Rental Cart  
+- Users can add multiple cars to the rental cart before proceeding to checkout.  
+- The cart allows users to manage selections, remove vehicles, and finalize bookings efficiently.  
 
+Tech Stack  
+- Frontend: Next.js 14+, Tailwind CSS  
+- Backend: Sanity CMS  
+- Database: Sanity Dataset  
+- Hosting: Vercel  
 
+Backend Functionality  
+The backend is powered by Sanity CMS, allowing robust CRUD operations for managing:  
+- Car Listings (Make, Model, Features, Availability).  
+- Rental Data (User, Rental Status, Duration).  
+- User Interactions (Order Tracking, Payment History).  
+- Car Rental Cart Management (Adding/Removing Cars, Booking Processing).  
+
+It ensures real-time updates, maintaining accurate stock levels and order records.  
+
+Future Enhancements  
+- Dynamic Filtering for a refined search experience.  
+- Advanced Shipment Tracking for rental deliveries.  
+- Comprehensive Analytics for better business insights.  
+
+This project is built with scalability in mind, ensuring continuous improvements based on industry needs.  
