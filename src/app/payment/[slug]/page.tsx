@@ -34,7 +34,7 @@ interface Car {
 }
 
 async function getCarById(slug: string) {
-    const cleanSlug = slug.replace(/['"]+/g, "");
+    const cleanSlug = slug.replace(/[""]+/g, "");
   const query = `*[_type == "car" && slug.current == "${cleanSlug}"][0]{
     _id,
     name,

@@ -1,13 +1,11 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-      domains: ["cdn.sanity.io"],
-    },
-    typescript: {
-      ignoreBuildErrors: true, // 🚨 Use with caution
-    },
-    trailingSlash: true,  // ✅ Ensures correct routing on Vercel
-    output: "standalone", // ✅ Required for dynamic routes
-  };
-  
-  export default nextConfig;
-  
+  output: "standalone",
+  reactStrictMode: true,
+  trailingSlash: false,
+  images: {
+    domains: ["cdn.sanity.io"], // Add allowed image host
+  },
+};
+
+export default nextConfig;
