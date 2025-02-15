@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { urlFor } from "../lib/sanity";
 
+// Interface for Car data
 interface simplifiedCar {
   _id: string;
   name: string;
@@ -24,21 +25,19 @@ interface SearchProps {
 
 export default function Search({ data }: SearchProps) {
   const [searchQuery, setSearchQuery] = useState('');
-  const [filteredCars, setFilteredCars] = useState<simplifiedCar[]>([]);
+  const [filteredCars, setFilteredCars] = useState<simplifiedCar[]>(data);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const query = e.target.value;
     setSearchQuery(query);
 
     if (query.trim()) {
-      const filtered = data.filter((car) => {
-        console.log(car.name.toLowerCase());
-        return car.name.toLowerCase().includes(query.toLowerCase());
-      });
+      const filtered = data.filter((car) =>
+        car.name.toLowerCase().includes(query.toLowerCase())
+      );
       setFilteredCars(filtered);
     } else {
-      setFilteredCars([]);
-      setSearchQuery('');
+      setFilteredCars(data);
     }
   };
 
@@ -117,10 +116,13 @@ export default function Search({ data }: SearchProps) {
                 </CardContent>
                 <CardFooter className="flex justify-between items-center">
                   <p>
-                    {car.pricePerDay}/<span className="text-gray-500">day</span>
+                    ${car.pricePerDay}/<span className="text-gray-500">day</span>
                   </p>
                   <Link href={`/categories/${car.slug.current}`}>
-                    <button className="bg-[#3563e9] p-2 text-white rounded-md" onClick={()=> setSearchQuery('')}>
+                    <button
+                      className="bg-[#3563e9] p-2 text-white rounded-md"
+                      onClick={() => setSearchQuery('')}
+                    >
                       Rent Now
                     </button>
                   </Link>

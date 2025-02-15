@@ -4,7 +4,7 @@ import { createContext, useContext, useState, ReactNode } from "react";
 
 interface CartItem {
   image: any;
-  pricePerDay: ReactI18NextChildren | Iterable<ReactI18NextChildren>;
+  pricePerDay: React.ReactNode;
   id: string;
   name: string;
   price: number;

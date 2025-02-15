@@ -4,7 +4,13 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: false,
   images: {
-    domains: ["cdn.sanity.io"], // Add allowed image host
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        pathname: "/**",
+      },
+    ],
   },
 };
 

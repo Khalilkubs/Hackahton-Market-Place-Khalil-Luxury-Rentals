@@ -2,15 +2,15 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { client } from "../lib/sanity";
-import Search from "./Search";
+import Search from "./search";
 import Link from "next/link";
 
-interface Car {
+interface SimplifiedCar {
   _id: string;
   name: string;
   type: string;
   slug: { current: string };
-  image: { asset: { url: string } };
+  image: string; // 
   fuelCapacity: string;
   transmission: string;
   seatingCapacity: string;
@@ -33,13 +33,17 @@ async function getData() {
 }
 
 export default function Navbar() {
-  const [data, setData] = useState<Car[]>([]);
-  const [cart, setCart] = useState<Car[]>([]);
+  const [data, setData] = useState<SimplifiedCar[]>([]);
+  const [cart, setCart] = useState<SimplifiedCar[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       const fetchedData = await getData();
-      setData(fetchedData);
+      const simplifiedData = fetchedData.map((car: any) => ({
+        ...car,
+        image: car.image.asset.url, // image کو string URL میں تبدیل کیا
+      }));
+      setData(simplifiedData);
     };
     fetchData();
   }, []);
