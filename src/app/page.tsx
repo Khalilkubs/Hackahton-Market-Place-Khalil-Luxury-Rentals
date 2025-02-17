@@ -99,7 +99,7 @@ export default async function Home() {
         <div className="sec grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
           {data.slice(0, 4).map((product) => (
             <div key={product.id}>
-              <Card className="w-full max-w-[304px] mx-auto h-[388px] flex flex-col justify-between">
+              <Card className="w-full max-w-[320px] mx-auto h-[388px] flex flex-col justify-between">
                 <CardHeader>
                   <CardTitle className="w-full flex items-center justify-between">
                     {product.name}{" "}
@@ -166,7 +166,7 @@ export default async function Home() {
         <div className="sec grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
           {data.slice(5, 13).map((product) => (
             <div key={product.id}>
-              <Card className="w-full max-w-[304px] mx-auto h-[388px] flex flex-col justify-between">
+              <Card className="w-full max-w-[304px] mx-auto h-[400px] flex flex-col justify-between">
                 <CardHeader>
                   <CardTitle className="w-full flex items-center justify-between">
                     {product.name}{" "}

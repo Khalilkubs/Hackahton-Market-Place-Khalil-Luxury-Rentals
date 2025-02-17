@@ -34,7 +34,7 @@ interface Car {
 }
 
 async function getCarById(slug: string) {
-    const cleanSlug = slug.replace(/[""]+/g, "");
+    const cleanSlug = slug.replace(/['"]+/g, "");
   const query = `*[_type == "car" && slug.current == "${cleanSlug}"][0]{
     _id,
     name,
@@ -61,9 +61,10 @@ export default function Payment({ params }: { params: { slug: string } }) {
       fetchData();
     }, []);
 
-  if (!car) {
-    return;
-  }
+    if (!car) {
+      return <div>Loading...</div>;
+    }
+    
 
   return (
     <div className="w-full min-h-screen bg-[#f6f7f9] p-4 sm:p-6 font-[family-name:var(--font-geist-sans)]">
