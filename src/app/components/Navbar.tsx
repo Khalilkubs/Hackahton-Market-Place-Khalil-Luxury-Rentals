@@ -41,7 +41,7 @@ export default function Navbar() {
       const fetchedData = await getData();
       const simplifiedData = fetchedData.map((car: any) => ({
         ...car,
-        image: car.image.asset.url, // image کو string URL میں تبدیل کیا
+        image: car.image.asset.url, // image کو string URL 
       }));
       setData(simplifiedData);
     };
